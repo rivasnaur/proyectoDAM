@@ -15,5 +15,10 @@ Semana 12-18 Abril
   
   - Vue.js: entrando un poco ya en materia nueva, el tema de vue.js y tener la opción de utilizar un framework que te facilite y mejore la creación del front-end de tu  web sin la "necesidad" de crearlo todo desde 0 con simple CSS abre un abanico de posibilidades a la hora de programar. Este tema ya tiene algunos ejemplos prácticos con los que sí poder practicar y poder familiarizarme con el framework, además de ir subiendo algo útil para el seguimiento sin ser ejercicios o comprobaciones sueltas.
   
+ Semana 2 Mayo - 9 Mayo
+  
+  - Vue.js: avanzando con los vídeos y creado el proyecto, el inicio (así como a varios usuarios que han puesto un comentario en las respuestas del vídeo) me parece un poco confuso una vez te pones con la parte práctica. Instaladas dependencias de npm, node.js y babel. Interesante este último, transpilador para "traducir" ecmascript a javascript compatible con cualquier navegador moderno.
+  Imagino que es normal, pero veo demasiada diferencia entre la enseñanza desde 0 de los cursos de HTML y CSS comparado con éste (también es un profesor distinto). Como ya dije, en las respuestas veo que no soy el único y hay desconcierto a la hora de realizar los primeros pasos (creación del proyecto, primer componente, qué ha hecho el profesor para llegar hasta ahí, etc.) 
+  
   
   
