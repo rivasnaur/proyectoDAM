@@ -21,4 +21,11 @@ Semana 12-18 Abril
   Imagino que es normal, pero veo demasiada diferencia entre la enseñanza desde 0 de los cursos de HTML y CSS comparado con éste (también es un profesor distinto). Como ya dije, en las respuestas veo que no soy el único y hay desconcierto a la hora de realizar los primeros pasos (creación del proyecto, primer componente, qué ha hecho el profesor para llegar hasta ahí, etc.) 
   
   
+Semana 9 Mayo - 16 Mayo
+    
+  - Vue.js: siguiendo con el curso, el tema del ciclo de vida de los componentes supongo que es algo lógico en cualquier o casi cualquier parte de la programación, que todo siga un orden dependiendo en qué fase se encuentre. En cuanto a la comunicación entre componentes, desde el padre al hijo se hace mediante las propiedades que el hijo hereda y en el caso contrario, aunque no es lo habitual, para comunicarse desde un hijo al padre se haría mediante la emisión de eventos, aunque solo si se quiere comunicar con sólo un nivel superior. Sobre los componentes asíncronos, vue nos permite la posibilidad de cargar nuestros componentes de forma asíncrona, o bajo demanda; básicamente, cargarlos sólo cuando los necesitemos y no siempre que se ejecute nuestra aplicación para ahorrar recursos.
+  
+  
+  
+  
   
