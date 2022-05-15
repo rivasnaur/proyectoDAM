@@ -9,7 +9,10 @@
     props: {
       avatar: {
         type: String,
-        required: true
+        required: true,
+        validator (value) {
+          return value.startsWith('http')
+        },
       },
       name: {
         type: String,
@@ -56,7 +59,32 @@
                 meta = '${meta} - ${this.company}'
             }
             return meta
+        },
+        watch: {
+          metadata (newValue) {
+            console.log('Metadata:', newValue)
+          }
         }
+        // othermeta: {
+
+        //     get (){
+        //         let meta = ''
+
+        //     if(this.email) {
+        //         meta = '${meta} - ${this.email}'
+        //     }
+
+        //     if(this.location) {
+        //         meta = '${meta} - ${this.location}'
+        //     }
+
+        //     if(this.company) {
+        //         meta = '${meta} - ${this.company}'
+        //     }
+        //     return meta
+        //     }
+        // }
+        //..      
     }
   }
 </script>

@@ -1,19 +1,28 @@
-<template>
+<template lang='html'>
     <ul class="developers">
         <li class="developers__item">
             <co-developer></co-developer>
+        </li>
+    </ul>
 </template>
 
 <script>
+    import bus from '@/busdata.js'
+
     export default {
         name: 'CoDevelopers',
         data () {
             return {
-                users: [],
-                fullName() {
-                    return '$(this.name) $(this.surname)'
-                }
+                users: [],                
             }
+        },
+        mounted () {
+            console.log('CoDeveloper mounted')
+        },
+        created () {
+            bus.$on('search', criteria => {
+                console.log('CoDevelopers', criteria)
+            })
         }
     }
 </script>
