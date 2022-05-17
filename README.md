@@ -42,6 +42,15 @@ Semana 9 Mayo - 16 Mayo
   
   En el caso del curso de git, los ejemplos prácticos que he subido son básicamente jugar un poco con los comandos básicos, ver las modificaciones y como funcionan los tres estados de los ficheros, clonado de repositorios remotos, funciones con ramas (crear, moverte, eliminar).
   
+  Semana 16 Mayo - 23 Mayo
+    
+    - MongoDB: explicaciones iniciales de su histórico, por qué nacen las bases de datos noSQL, formato JSON, ventajas y desventajas entre SQL y noSQL.
+  Instalación de servicios mongoDB, interfaz y consola mongosh en Windows, aunque en el vídeo se utiliza MacOS.
+  Comandos de creación y borrado de bases de datos, inserción de colecciones y elementos (denominados documentos, en formato JSON). Interesante que al insertar datos en una colección, si no agregas un identificador mondoDB se encarga de asignarle un id propio (ObjectID) y único.
+  La primera práctica es básica, de inserción de datos con propiedades. No puedo subir nada ya que no es un proyecto como tal, más que comandos en el shell de mongo.
+  
+  Comandos de inserción: db.nombrecoleccion.insertOne({ documento JSON }). También tenemos la posibilidad hacer una inserción múltiple con insertMany en lugar de insertOne. Para consultar los datos que contiene una colección se usa el comando db.nombrecoleccion.find(). Para eliminar un registro se usa el comando db.nombrecoleccion.deleteOne({condicion}). También es posible usar deleteMany para el borrado de varios registros, donde se borrará el documento que cumpla la condición (si se usa deleteOne y hay varios documentos que cumplan la condición se borrará el primero que encuentre). Para la actualización de registros, hay 3 maneras, updateOne, updateMany o replaceOne. En los dos primeros hay que introducir 2 documentos JSON, uno con el filtro para encontrar el/los registros que queremos actualizar y en un segundo documento las propiedades que se actualizarán basados en la palabra reservada $set. Si usamos replaceOne, también hay que introducir dos documentos JSON como parámetros, pero este método directamente, como su nombre indica, reemplaza el documento que encuentra con el filtro que introducimos como primer parámetrp y lo reemplaza por el documento json que pasamos como segundo parámetro.
+  
   
   
   
