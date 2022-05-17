@@ -44,13 +44,16 @@ Semana 9 Mayo - 16 Mayo
   
   Semana 16 Mayo - 23 Mayo
     
-    - MongoDB: explicaciones iniciales de su histórico, por qué nacen las bases de datos noSQL, formato JSON, ventajas y desventajas entre SQL y noSQL.
+   - MongoDB: explicaciones iniciales de su histórico, por qué nacen las bases de datos noSQL, formato JSON, ventajas y desventajas entre SQL y noSQL.
   Instalación de servicios mongoDB, interfaz y consola mongosh en Windows, aunque en el vídeo se utiliza MacOS.
   Comandos de creación y borrado de bases de datos, inserción de colecciones y elementos (denominados documentos, en formato JSON). Interesante que al insertar datos en una colección, si no agregas un identificador mondoDB se encarga de asignarle un id propio (ObjectID) y único.
   La primera práctica es básica, de inserción de datos con propiedades. No puedo subir nada ya que no es un proyecto como tal, más que comandos en el shell de mongo.
   
   Comandos de inserción: db.nombrecoleccion.insertOne({ documento JSON }). También tenemos la posibilidad hacer una inserción múltiple con insertMany en lugar de insertOne. Para consultar los datos que contiene una colección se usa el comando db.nombrecoleccion.find(). Para eliminar un registro se usa el comando db.nombrecoleccion.deleteOne({condicion}). También es posible usar deleteMany para el borrado de varios registros, donde se borrará el documento que cumpla la condición (si se usa deleteOne y hay varios documentos que cumplan la condición se borrará el primero que encuentre). Para la actualización de registros, hay 3 maneras, updateOne, updateMany o replaceOne. En los dos primeros hay que introducir 2 documentos JSON, uno con el filtro para encontrar el/los registros que queremos actualizar y en un segundo documento las propiedades que se actualizarán basados en la palabra reservada $set. Si usamos replaceOne, también hay que introducir dos documentos JSON como parámetros, pero este método directamente, como su nombre indica, reemplaza el documento que encuentra con el filtro que introducimos como primer parámetrp y lo reemplaza por el documento json que pasamos como segundo parámetro.
-  
+  Al contrario de las bases de datos SQL, las noSQL son Schemaless, y no tienen que seguir el 'esquema' de reglas relacionadas con el tipo de información que almacena. Tiene ventajas y desventajas, como sacrificar un poco de control del tipo de datos por ganar algo de flexibilidad a la hora de guardar documentos. También existen los documentos referenciados, en los que podemos "llamarlos" por su identificador y podemos acceder a sus datos.
+  Para consultar documentos tenemos el comando db.nombrecoleccion.find(), al que podemos pasar un documento json como parámetro opcional que funcionará como filtro para buscar. Añadiendo .pretty() al final, nos mostrará los resultados con un formateo más amigable y fácil de leer.
+  Por último, tenemos los índices, que tenemos que añadir manualmente para cada registro, aunque se pueden crear índices compuestos sobre varios campos. Si no hubiera índices, a la hora de realizar cualquier consulta, mongoDB tendría que analizar absolutamente todos los datos, incluso para buscar un dato en concreto. Resumidamente, se usan como un filtro más para evitar que las consultas sean tan costosas y optimizar el rendimiento de nuestra base de datos.
+  En resumen, buen curso, sencillo, dejando claros los conceptos básicos de cómo gestionar una base de datos. Desconozco si en Mac también está disponible, pero en Windows mongoDB tiene un programa con interfaz gráfica (MongoDB Compass) que es más visual y accesible, aunque he realizado el curso con comandos en la consola de mongodb (mongosh) para seguir el ritmo del profesor.
   
   
   
