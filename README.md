@@ -55,6 +55,17 @@ Semana 9 Mayo - 16 Mayo
   Por último, tenemos los índices, que tenemos que añadir manualmente para cada registro, aunque se pueden crear índices compuestos sobre varios campos. Si no hubiera índices, a la hora de realizar cualquier consulta, mongoDB tendría que analizar absolutamente todos los datos, incluso para buscar un dato en concreto. Resumidamente, se usan como un filtro más para evitar que las consultas sean tan costosas y optimizar el rendimiento de nuestra base de datos.
   En resumen, buen curso, sencillo, dejando claros los conceptos básicos de cómo gestionar una base de datos. Desconozco si en Mac también está disponible, pero en Windows mongoDB tiene un programa con interfaz gráfica (MongoDB Compass) que es más visual y accesible, aunque he realizado el curso con comandos en la consola de mongodb (mongosh) para seguir el ritmo del profesor.
   
+  - Express y Node.js
+  
+  En resumen, express es un framework web hecho en node, el cual es un entorno de ejecución para javascript construido con el motor de javascript v8 de Chrome. Entre sus funcionalidades destacan la existencia del NPM (Node Package Manager), uno de los gestores de paquetes más grandes a nivel mundial con el que podemos compartir código, dependencias o distribuirlas fácilmente. Gracias al npm, es muy fácil la distribución, ya que en node existe un fichero llamado package.json, donde se almacenan las dependencias del proyecto, y compartiendo únicamente este archivo, con el npm, podremos obtener las dependencias del proyecto original sin necesidad de de grandes tranmisiones de datos. 
+  Comenzando el proyecto, importamos una base de datos proporcionada por el profesor (recipes.json) a mongodb.
+  Confirmando mis sospechas, hay un MILLÓN de cosas que se pasan por alto OTRA vez. Suponiendo que es un curso para APRENDER, me he tirado 2 horas para poder configurar un simple start server buscando por distintos sitios, instalando módulos necesarios que el cli de vue no incluye (y que tampoco comenta que hay que añadir en ningún momento), etc.
+  Aún así, consiguiendo que el proyecto funcione, creamos un servidor básico en localhost, mediante el MVC que hemos visto en SGE en clase, creamos un controlador con métodos para cuando ejecutemos la API Rest tengamos algún valor de prueba de que todo está funcionando por el momento. Para estas pruebas estoy usando la extensión Rester de Firefox que también usamos con Javi en Acceso a Datos.
+  Para el modelo que usaremos para conectarnos con MondoDB, instalamos del npm el módulo mongoose, y creamos métodos. Modificando los métodos anteriormente creados en el controlador añadimos las propiedades que queremos que muestre la API Rest cuando conectemos con la base de datos que importamos al principio del proyecto.
+  Para la parte de seguridad, utilizamos un token que generamos manualmente en el archivo .env e instalamos otro paquete de npm, jwt-simple, que importamos en nuestros archivos auth.js, y tras crear el controlador con sus métodos, hacemos las comprobaciones de qué queremos devolver y cómo queremos gestionar el acceso dependiendo de si el usuario está autentificado o no.
+  Entrando en el front, con el npm descargamos directamente un template de progressive web app. Igual que en la parte de servidor, creamos nuestros componentes .vue con su html, definimos las rutas y tras arrancar tanto cliente como server, se carga el template que descargamos y muestra la información tras conectarse a la base de datos.
+  
+  
   
   
   
