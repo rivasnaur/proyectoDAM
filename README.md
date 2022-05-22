@@ -64,7 +64,11 @@ Semana 9 Mayo - 16 Mayo
   Para el modelo que usaremos para conectarnos con MondoDB, instalamos del npm el módulo mongoose, y creamos métodos. Modificando los métodos anteriormente creados en el controlador añadimos las propiedades que queremos que muestre la API Rest cuando conectemos con la base de datos que importamos al principio del proyecto.
   Para la parte de seguridad, utilizamos un token que generamos manualmente en el archivo .env e instalamos otro paquete de npm, jwt-simple, que importamos en nuestros archivos auth.js, y tras crear el controlador con sus métodos, hacemos las comprobaciones de qué queremos devolver y cómo queremos gestionar el acceso dependiendo de si el usuario está autentificado o no.
   Entrando en el front, con el npm descargamos directamente un template de progressive web app. Igual que en la parte de servidor, creamos nuestros componentes .vue con su html, definimos las rutas y tras arrancar tanto cliente como server, se carga el template que descargamos y muestra la información tras conectarse a la base de datos.
+  Me parece bastante interesante las alternativas de frameworks para front-end que existen y que facilitan mucho la tarea sin necesidad de "picar" todo el código desde 0, desconozco si express es muy utilizado laboralmente a día de hoy pero lo que sí me pareció muy útil y práctico es el sistema de gestión de paquetes de node.
   
+  - Resumen curso Vue.js
+      Personalmente, el contenido es bueno, pero creo que se intenta abarcar demasiado y muy rápido en un sólo curso, o al menos es la impresión que me ha dado, ya que siendo alguien que no tiene ningún conocimiento de las tecnologías utilizadas, me he visto perdido en prácticamente toda la duración del curso de Vue. Código que aparece copiado de "algún sitio", ninguna explicación de dónde salen algunos archivos (en algunos casos lo he descubierto en las preguntas que dejan los usuarios, pero la sensación es la misma). Demasiaadas cosas dejadas a libre interpretación para un curso de iniciación desde el principio y que abarque tantos conceptos nuevos que pueden parecer triviales para alguien que se dedica a ello y lleva años trabajando con ellos pero para alguien que está empezando puede llegar (y fue) demasiado frustrante.
+ 
   
   
   
