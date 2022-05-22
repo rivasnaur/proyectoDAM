@@ -1,14 +1,18 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// Dependencies
 import Vue from 'vue'
+import router from '@/router'
+
+// Components
 import CoApp from '@/App'
 
+import '@/directives/focus.js'
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  router,
   el: '#codit',
-  components: { CoApp },
-  template: '<co-app/>'
+  template: '<co-app/>',
+  components: { CoApp }
 })
