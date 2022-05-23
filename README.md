@@ -68,6 +68,14 @@ Semana 9 Mayo - 16 Mayo
   
   - Resumen curso Vue.js
       Personalmente, el contenido es bueno, pero creo que se intenta abarcar demasiado y muy rápido en un sólo curso, o al menos es la impresión que me ha dado, ya que siendo alguien que no tiene ningún conocimiento de las tecnologías utilizadas, me he visto perdido en prácticamente toda la duración del curso de Vue. Código que aparece copiado de "algún sitio", ninguna explicación de dónde salen algunos archivos (en algunos casos lo he descubierto en las preguntas que dejan los usuarios, pero la sensación es la misma). Demasiaadas cosas dejadas a libre interpretación para un curso de iniciación desde el principio y que abarque tantos conceptos nuevos que pueden parecer triviales para alguien que se dedica a ello y lleva años trabajando con ellos pero para alguien que está empezando puede llegar (y fue) demasiado frustrante.
+  
+  - Node.js
+  Otra vez ya no creo que sea casualidad, así que voy a imaginar que como el curso ya tiene unos años, algunos de los comandos ya están deprecated (ni siquiera los imports me funcionaban). Después de los cursos de vue y express, los aspectos básicos de node han quedado claros aunque siga saliendo código de la nada.
+  Destacar la comodidad de el plugin npm nodemon, para que se actualice el proyecto automáticamente si cambiamos el código de algún fichero.
+  En cuanto al tema de los sockets, me ha quedado mucho más claro gracias al tema que hemos visto en servicios y el de API Rest de Acceso a Datos.
+  En los cursos de node, vue, y express, se recicla bastante contenido, las introducciones son prácticamente similares, así como la iniciación a MongoDB, aparte del propio curso propio de MongoDB.
+  
+  Resumidamente, me pareció un buen curso "básico" de cómo iniciarte en estas nuevas tecnologías aunque, lo diré por última vez, hay demasiados conceptos que se pasan por alto que, personalmente, no eran tan triviales para la mayoría de usuarios de esta carrera. Entiendo que se puedan obviar determinados aspectos cuando ya los has visto un par de veces, pero partir de la base de considerar que algo ya debería saberse en un curso de 0 me parece un error, así como muchos de los temas de Vue.js que, aunque trata bastantes conceptos, hubiera preferido que se dividiese en más temas y entrar un poco más en profundidad desde el inicio para dejar unas bases bien marcadas, como sí sentí que fue en los demás temas como el de Git o el de MongoDB donde apenas tuve problemas para seguirlo (obviamente es menos contenido y trata menos conceptos). Salvando esos detalles, muy buen contenido en general.
  
   
   
